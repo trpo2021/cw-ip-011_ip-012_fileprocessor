@@ -22,7 +22,6 @@ int fileRename(char* key, char* dir, int lay)
     int c = 0;
     int count = 1;
     int lt, j, l, h, ln, dot, typeln;
-    int lay = 3;
 
     switch (lay) {
     case 1:
@@ -36,7 +35,7 @@ int fileRename(char* key, char* dir, int lay)
         break;
     }
 
-    char *k, type;
+    char *k, *type;
     k = new char[1];
 
     d = opendir(path);
