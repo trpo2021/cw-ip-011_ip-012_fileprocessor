@@ -1,3 +1,3 @@
 #pragma once
 
-void chooseDir(char *dir);
+void chooseDir(char* dir);

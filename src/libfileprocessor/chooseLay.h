@@ -1,3 +1,3 @@
 #pragma once
 
-int chooseLay(char *key);
+int chooseLay(char* key);
