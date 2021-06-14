@@ -34,7 +34,7 @@ int fileRename(char* key, char* dir, int lay)
         lt = 64;
         break;
     default:
-    	return WRONGLAYOUT;
+        return WRONGLAYOUT;
     }
 
     char *k, *type;
