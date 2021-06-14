@@ -1,9 +1,9 @@
-#include "fileRename.h"
+#include "libfileprocessor/fileRename.h"
 
 #include <ctest.h>
 #include <string.h>
 
-CTEST(filerename_suite, rename_success)
+CTEST(rename_suite, rename_success)
 {
 	char key[100], dir[100], lay;
 	
@@ -17,7 +17,7 @@ CTEST(filerename_suite, rename_success)
 	ASSERT_EQUAL(testExp, testResult);
 }
 
-CTEST(filerename_suite, rename_success)
+CTEST(rename_suite, wrong_layout)
 {
 	char key[100], dir[100], lay;
 	
