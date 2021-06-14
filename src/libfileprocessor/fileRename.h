@@ -2,6 +2,6 @@
 
 enum test { 
 	RENAMESUCCESS, 
-	WRONGINPUT };
+	WRONGLAYOUT };
 
 int fileRename(char* key, char* dir, int lay);
