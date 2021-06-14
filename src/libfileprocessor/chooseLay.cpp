@@ -5,7 +5,8 @@ using namespace std;
 
 int chooseLay(char *key)
 {
-	cout << endl << "Choose Layout:\n1 - numerical\n2 - symbolic\n3 - symbolic (big)";
+	system("clear");
+	cout << endl << "Choose Layout \n1 - numerical\n2 - symbolic\n3 - symbolic (big)\n(1-3): ";
 	int chose = 0;
 	cin >> chose;
 	
