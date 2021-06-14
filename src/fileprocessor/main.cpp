@@ -13,7 +13,7 @@ int main()
     while (1) {
         system("clear");
         printf("\n1. Rename files");
-        printf("\n2. Choose directiry");
+        printf("\n2. Choose directory");
         printf("\n3. Choose layout");
         printf("\n4. Exit program");
 
