@@ -2,11 +2,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "libfileprocessor/fileRename.h"
 
 int fileRename(char* key, char* dir, int lay)
 {
     DIR* d;
-    struct dirent* dir;
+    struct dirent* directory;
 
     FILE* fp;
 
@@ -41,8 +42,8 @@ int fileRename(char* key, char* dir, int lay)
 
     d = opendir(path);
     if (d) {
-        while ((dir = readdir(d)) != NULL) {
-            printf("%s\n", dir->d_name);
+        while ((directory = readdir(d)) != NULL) {
+            printf("%s\n", directory->d_name);
             if (c > 1) {
             FE:
                 j = i + lt;
@@ -55,7 +56,7 @@ int fileRename(char* key, char* dir, int lay)
                 k[0] = j;
                 strcpy(filepath, path);
                 strcpy(filefinal, filename);
-                strcat(filepath, dir->d_name);
+                strcat(filepath, directory->d_name);
                 
                 for (l = 0; l < count; l++) {
                     strcat(filefinal, k);

@@ -1,11 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "libfileprocessor/chooseDir.h"
+#include "libfileprocessor/chooseLay.h"
+#include "libfileprocessor/fileRename.h"
 
 int main()
 {
-	int i, j, check, lay;
+	int check, lay;
 	char dir[200], key[50];
-	lo = 0;
+	lay = 0;
 	
 	while(1)
 	{
@@ -27,7 +30,7 @@ int main()
 		else printf("Current keyword: %s", key);
 		
 		printf("\n\nType option(1-4): ");
-		scanf("%d", check);
+		scanf("%d", &check);
 		
 		switch(check)
 		{
