@@ -33,6 +33,8 @@ int fileRename(char* key, char* dir, int lay)
     case 3:
         lt = 64;
         break;
+    default:
+    	return WRONGINPUT;
     }
 
     char *k, *type;
@@ -93,5 +95,5 @@ int fileRename(char* key, char* dir, int lay)
         }
         closedir(d);
     }
-    return 0;
+    return RENAMESUCCESS;
 }
