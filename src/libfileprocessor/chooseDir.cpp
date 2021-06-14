@@ -1,5 +1,5 @@
 #include <iostream>
-#include "libfileprocessor/choosedir.h"
+#include "libfileprocessor/chooseDir.h"
 
 void chooseDir(char *dir)
 {
